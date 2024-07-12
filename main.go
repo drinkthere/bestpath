@@ -1,4 +1,4 @@
-package bestpath
+package main
 
 import (
 	"bestpath/config"
