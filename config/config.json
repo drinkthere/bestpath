@@ -1,9 +1,9 @@
 {
     "LogLevel": "INFO",
-    "LogPath": "./logs/test.log",
+    "LogPath": "./logs/bp.log",
 
-    "InitSourceIP": "eth7",
-    "InitTargetIP": "172.31.16.148",
+    "InitSourceIP": "eth5",
+    "InitTargetIP": "172.31.16.158",
 
     "SourceIPs": [
         "192.168.14.33",
