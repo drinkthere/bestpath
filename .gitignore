@@ -1,0 +1,6 @@
+vendor/
+.idea
+bin/bestpath
+bin/logs
+*.DS_Store
+*.env
