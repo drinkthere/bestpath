@@ -13,7 +13,7 @@ import (
 func LoopPingAws(cfg *config.Config, globalContext *context.GlobalContext) {
 	go func() {
 		for {
-			time.Sleep(300 * time.Second)
+			time.Sleep(1 * time.Hour)
 			var bestPath container.BestPath
 			bestLatency := time.Duration(1<<63 - 1)
 			// Use a WaitGroup to track the completion of all ping operations
