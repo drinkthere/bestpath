@@ -52,7 +52,7 @@ func LoopPingAws(cfg *config.Config, globalContext *context.GlobalContext) {
 			// Wait for all ping operations to complete
 			wg.Wait()
 
-			logger.Info("bestP path is %+v", bestPath)
+			logger.Info("Best path is %+v", bestPath)
 			currentBestPath := globalContext.BestPath
 			if currentBestPath.SourceIP != bestPath.SourceIP || currentBestPath.TargetIP != bestPath.TargetIP {
 				logger.Warn("Best path changed from %s->%s to %s->%s", currentBestPath.SourceIP,

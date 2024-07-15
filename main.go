@@ -30,6 +30,7 @@ func main() {
 	// 解析config，加载杠杆和合约交易对，初始化context，账户初始化设置，拉取仓位、余额等
 	globalContext.Init(&globalConfig)
 
+	logger.Info("Staring Now")
 	StartZmq(&globalConfig, &globalContext)
 
 	// 开始定时ping aws服务器获取最优出口ip
