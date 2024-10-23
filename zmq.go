@@ -41,7 +41,7 @@ func StartZmq(cfg *config.Config, globalContext *context.GlobalContext) {
 					TargetIP: globalContext.BestPath.TargetIP,
 					AvgRtt:   int64(globalContext.BestPath.AvgRtt),
 				}
-
+				logger.Info("md is %+v", md)
 				data, err := proto.Marshal(md)
 				if err != nil {
 					logger.Error("[ZMQ] Error marshaling MarketData: %v", err)
