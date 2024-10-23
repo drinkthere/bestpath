@@ -39,6 +39,7 @@ func StartZmq(cfg *config.Config, globalContext *context.GlobalContext) {
 				md := &pb.BestPath{
 					SourceIP: globalContext.BestPath.SourceIP,
 					TargetIP: globalContext.BestPath.TargetIP,
+					AvgRtt:   int64(globalContext.BestPath.AvgRtt),
 				}
 
 				data, err := proto.Marshal(md)

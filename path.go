@@ -42,6 +42,7 @@ func LoopPingAws(cfg *config.Config, globalContext *context.GlobalContext) {
 							bestPath = container.BestPath{
 								SourceIP: localEth,
 								TargetIP: targetIP,
+								AvgRtt:   bestLatency,
 							}
 						}
 					}(sourceIP, targetIP)
